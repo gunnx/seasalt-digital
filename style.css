@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'Geometria-Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Geometria-Light'), url('./font/geometria-woff/Geometria-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Geometria-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Geometria-Bold'), url('./font/geometria-woff/Geometria-Bold.woff') format('woff');
+}
+
+
+html, body {
+    background-color: #eee;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Geometria-Light', sans-serif;
+    height: 100%;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 100%;
+    max-width: 100rem;
+}
+
+.hidden {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/** NAV **/
+
+.nav {
+    background-color: #fff;
+    padding: 1rem 0;
+}
+
+.nav__list {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__list-item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin: 0;
+    text-align: center;
+}
+
+.nav__list-item--logo {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+.nav__list-item a {
+    font-size: 0.6rem;
+    text-decoration: none;
+    color: #000;
+    font-family: Geometria-Light;
+    white-space: nowrap;
+}
+
+.nav__list-item img {
+    width: 3rem;
+}
+
+@media screen and (min-width: 400px) {
+  .nav__list-item a {
+      font-size: 0.8rem;
+  }
+}
+
+
+/** LOGO **/
+.logo {
+    text-align: center;
+}
+
+.logo__title {
+    font-family: 'Geometria-Bold', sans-serif;
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.logo__subtitle {
+    font-family: 'Geometria-Light', sans-serif;
+}
+
+
+@media screen and (min-width: 380px) {
+    .logo__title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 520px) {
+    .logo__title {
+        font-size: 3rem;
+    }
+}
+
+/** CARD **/
+.card {
+    background: #106668;
+    color: #eff;
+    padding: 1rem 3rem;
+    position: relative;
+    min-height: 200px;
+}
+
+.card::after {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    left: calc(50% - 10px);
+    bottom: -10px;
+    transform: rotate(45deg);
+    background-color: #137db5;
+    overflow: hidden;
+}
+
+.card--alt {
+    background: #eff;
+    color: #106668;
+}
+
+.card--last::after {
+  width: 0;height: 0;
+}
+
+.card__title {
+    font-size: 2rem;
+    font-family: Geometria-Bold, sans-serif;
+    text-shadow: 1px 1px rgba(0,0,0,0.01), 2px 2px rgba(0,0,0,0.03), 3px 3px rgba(0,0,0,0.025), 4px 4px rgba(0,0,0,0.02), 5px 5px rgba(0,0,0,0.015), 6px 6px rgba(0,0,0,0.01), 7px 7px rgba(0,0,0,0.01), 8px 8px rgba(0,0,0,0.01), 9px 9px rgba(0,0,0,0.01), 10px 10px rgba(0,0,0,0.01);
+}
+
+/** SERVICES **/
+.services {
+    margin: 0 auto;
+}
+
+.services__card {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.services__card p {
+    font-size: 0.9rem;
+}
+
+.services__title {
+    padding: 0;
+    margin: 0;
+    font-family: Geometria-Bold, sans-serif;
+}
+
+@media screen and (min-width: 500px) {
+    .services {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .services__card {
+        text-align: left;
+
+    }
+}
+
+
+/** PORTFOLIO **/
+.portfolio {
+
+}
+
+.portfolio__logo {
+    width: 6rem;
+    height: 6rem;
+    display: inline-block;
+    border-radius: 5px;
+    border: 3px solid #eff;
+    background-color: #eff;
+}
+
+.portfolio__item {
+    text-align: center;
+    margin: 2rem 5px;
+}
+
+.portfolio__item {
+    font-family: Geometria-Bold, sans-serif;
+}
+
+.portfolio__skill {
+  font-family: Geometria-Light, sans-serif;
+}
+
+
+@media screen and (min-width: 660px) {
+    .portfolio {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .portfolio__item {
+        flex: 1;
+    }
+}
+
+.contact__email {
+    font-size: 2.5rem;
+    font-family: Geometria-Bold, sans-serif;
+}
