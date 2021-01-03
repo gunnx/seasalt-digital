@@ -13,10 +13,10 @@
     <header>
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__list-item"><a href="#">What we do</a></li>
-          <li class="nav__list-item"><a href="#">About us</a></li>
-          <li class="nav__list-item"><a href="#">Portfolio</a></li>
-          <li class="nav__list-item"><a href="#">Contact</a></li>
+          <li class="nav__list-item"><a href="#whatwedo">What we do</a></li>
+          <li class="nav__list-item"><a href="#about">About us</a></li>
+          <li class="nav__list-item"><a href="#portfolio">Portfolio</a></li>
+          <li class="nav__list-item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -34,38 +34,52 @@
         </div>
       </section>
       <section class="card card">
-        <h2 class="card__title">What we do</h2>
-        <p>Need support on your existing product or looking to build something new?</p>
+        <h2 class="card__title"><a id="whatwedo">What we do</a></h2>
+        <p>Seasalt Digital creates both web and app based content for clients in a variety of industries.</p>
+        <p>We can support you to achieve your goals:</p>
+        <ul class="list list--alt">
+          <li class="list__item">On your existing steady-state products</li>
+          <li class="list__item">By jumping in mid-project to provide the short-term expert resource you need</li>
+          <li class="list__item">By getting involved at the start of a new project to guide and build</li>
+        </ul>
         <div class="services">
           <div class="services__card">
-            <h3 class="services__title">Web development</h3>
+            <h3 class="services__title services__title--web">Web development</h3>
             <p>Responsive</p>
             <p>Focus on performance</p>
             <p>Accessibility</p>
             <p>Code quality</p>
           </div>
           <div class="services__card">
-            <h3 class="services__title">App development</h3>
+            <h3 class="services__title services__title--app">App development</h3>
             <p>Android and iOS</p>
-            <p>Lorem ipsum</p>
-            <p>Lorem ipsum</p>
-            <p>Lorum ipsum</p>
+            <p>Prototype ideas</p>
+            <p>Support and maintainance</p>
+            <p>App store submission</p>
           </div>
         </div>
       </section>
       <section class="card card--alt">
-        <h2 class="card__title">About</h2>
-        <p>Experience working with enterprise websites and applications as well as smaller businesses</p>
+        <h2 class="card__title"><a id="about">About</a></h2>
+        <p>Seasalt Digital was founded in 2018 and in that time has worked with clients in a variety of industries, from smaller businesses to international organisations.</p>
+        <p>Bringing a wealth of career experience from different sectors such as:</p>
+        <ul class="list">
+          <li class="list__item">Web design and development - agency</li>
+          <li class="list__item">Financial - Traditional banking</li>
+          <li class="list__item">Financial - Online 'Disrupter' Banking</li>
+          <li class="list__item">International Gaming - fantasy sports</li>
+        </ul>
         <div class="about"></div>
       </section>
       <section class="card">
-        <h2 class="card__title">Portfolio</h2>
+        <h2 class="card__title"><a id="portfolio">Portfolio</a></h2>
         <div class="portfolio">
           <figure class="portfolio__item">
             <img class="portfolio__logo" src="img/rbs.svg" alt="RBS" />
             <figcaption>
               <h3 class="portfolio__title">On-boarding</h3>
               <p class="portfolio__skill">Web / React / Redux / SASS</p>
+              <p><a class="portfolio__link" href="https://personal.natwest.com">personal.natwest.com</a></p>
             </figcaption>
           </figure>
           <figure class="portfolio__item">
@@ -73,6 +87,7 @@
             <figcaption>
               <h3 class="portfolio__title">Sports betting</h3>
               <p class="portfolio__skill">React Native / Redux / Fela</p>
+              <p><a class="portfolio__link" href="https://sportsbook.fanduel.com">sportsbook.fanduel.com</a></p>
             </figcaption>
           </figure>
           <figure class="portfolio__item">
@@ -80,12 +95,13 @@
             <figcaption>
               <h3 class="portfolio__title">Record measurements</h3>
               <p class="portfolio__skill">React Native / Styled Components / SQLLite</p>
+              <p><a class="portfolio__link" href="https://seasalt.digital/yardstick/index.html">seasalt.digital/yardstick</a></p>
             </figcaption>
           </figure>
         </div>
       </section>
       <section class="card card--alt card--last">
-        <h2 class="card__title">Contact</h2>
+        <h2 class="card__title"><a id="contact">Contact</a></h2>
         <p>Get in touch to discuss your needs.</p>
         <div class="contact">
           <h3 class="contact__email">INFO@SEASALT.DIGITAL</h3>

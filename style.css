@@ -154,6 +154,37 @@ html, body {
     text-shadow: 1px 1px rgba(0,0,0,0.01), 2px 2px rgba(0,0,0,0.03), 3px 3px rgba(0,0,0,0.025), 4px 4px rgba(0,0,0,0.02), 5px 5px rgba(0,0,0,0.015), 6px 6px rgba(0,0,0,0.01), 7px 7px rgba(0,0,0,0.01), 8px 8px rgba(0,0,0,0.01), 9px 9px rgba(0,0,0,0.01), 10px 10px rgba(0,0,0,0.01);
 }
 
+/** LIST **/
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list--alt .list__item::after {
+    background: #fff;
+}
+
+.list__item {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    margin-left: 1rem;
+    position: relative;
+}
+
+.list__item::after {
+     content: '';
+     height: .4em;
+     width: .4em;
+     background: #137db5;
+     display: block;
+     position: absolute;
+     transform: rotate(45deg);
+     top: .25em;
+     left: 0;
+}
+
+
 /** SERVICES **/
 .services {
     margin: 0 auto;
@@ -162,7 +193,9 @@ html, body {
 .services__card {
     text-align: center;
     margin: 2rem 0;
+    margin-right: 2rem;
 }
+
 
 .services__card p {
     font-size: 0.9rem;
@@ -172,9 +205,27 @@ html, body {
     padding: 0;
     margin: 0;
     font-family: Geometria-Bold, sans-serif;
+    position: relative;
+    display: inline-block;
 }
 
-@media screen and (min-width: 500px) {
+.services__title--app::before,
+.services__title--web::before {
+    background: url(img/smartphone.svg) no-repeat;
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    left: -35px;
+    top: -3px;
+}
+
+.services__title--web::before {
+    background: url(img/web.svg) no-repeat;
+    left: -40px;
+}
+
+@media screen and (min-width: 520px) {
     .services {
         display: flex;
         justify-content: space-evenly;
@@ -211,7 +262,13 @@ html, body {
 }
 
 .portfolio__skill {
-  font-family: Geometria-Light, sans-serif;
+    font-family: Geometria-Light, sans-serif;
+    font-size: 0.9rem;
+}
+
+.portfolio__link {
+    font-size: 0.8rem;
+    color: #eff;
 }
 
 
