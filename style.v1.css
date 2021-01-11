@@ -93,6 +93,16 @@ html, body {
     text-align: center;
 }
 
+@keyframes spin {
+    0% { transform: rotate(0deg); opacity: 0 }
+    100% { transform: rotate(360deg); opacity: 1 }
+}
+
+.logo__img {
+    animation: spin 2s ease-out;
+    animation-delay: 1s;
+}
+
 .logo__title {
     font-family: 'Geometria-Bold', sans-serif;
     font-size: 1.6rem;
